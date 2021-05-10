@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Flo-in",
+  "description": "A simple password vault",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "volt.png",
+    "default_popup": "popup.html",
+    "default_title": "Volt"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
